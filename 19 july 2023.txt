@@ -1,0 +1,226 @@
+#include<stdio.h>
+int main()
+{
+	int year;
+	printf("enter a year");
+	scanf("%d",&year);
+	if((year%4==0 && year%100 !=0)|| year%400==0)
+	{
+		printf("%d is a leap year",year);
+	}
+	else{
+		printf("%d is not a leap year",year);
+	}
+		return 0;
+	}
+
+*****************************************************************
+#include<stdio.h>
+int main()
+{
+	char b;
+	printf("enter the temp.");
+	scanf("%c",&b);
+	if(b=='c')
+	{
+	int a;
+	printf("enter the number");
+	scanf("%d",&a);
+	int temp=(a-32)*5/9;
+	printf("temp =%d",temp);
+    }
+    else if(b=='f')
+    {
+    	int a;
+    	printf("enter the number");
+		scanf("%d",&a);
+        int temp=(a*9/5)+32;
+        printf("temp=%d",temp);
+
+	}
+	else{
+		printf("please enter valid number");
+*********************************************************************************
+	#include<stdio.h>
+int main()
+{
+	int p,c,m,h,e;
+	printf("enter the marks of p,c,m,h,e");
+	scanf("%d %d %d %d %d",&p,&c,&m ,&h, &e);
+    int total=p+c+m+h+e;
+	float percentage=total/5.0; 
+	printf("total=%d",total);
+	printf("percentage=%d",percentage );
+	if(total<25)
+	{
+		printf("F.\n");
+		printf("percentage=%d",percentage);
+
+	 }
+	 else if(total>=25 && total<=45)
+	 {
+	 	printf("E. \n");
+	 }
+	 else if(total>45 && total<=50)
+	 {
+	 	printf("D");
+	 }
+	 else if(total>50 && total<=60)
+	 {
+	 	printf("C");
+	 }
+	 else if(total>60 && total<=80)
+	 {
+	 	printf("B");
+	 }
+	 else if (total>80)
+	 printf("A");
+	 
+	 
+	
+	return 0;
+}
+	
+*************************************************************************************
+#include<stdio.h>
+int main()
+{
+	char word;
+	printf("enter the value");
+	scanf("%d",&word);
+	if((word>='a'&& word<='z')|| (word>='A' && word<='z'))
+	{
+		printf("word is alpha");
+	}
+	else{
+		printf("word is not alpha");
+	}
+	return 0;
+	}
+********************************************************************************************
+#include<stdio.h>
+int main()
+{
+	float height_cm , height_m;
+	printf("enter the height in centimeters");
+	scanf("%f",&height_cm);
+	height_m=height_cm/100.0;
+	if(height_m<1.5)
+	{
+		printf("the person is short");
+	}
+	else if(height_m>=1.5 && height_m<1.8)
+	{
+		printf("the person is mid");
+	}
+	else{
+		printf("the person is tall");
+	}
+	return 0;
+}
+*****************************************************************************************************
+
+#include<stdio.h>
+int main()
+{
+	int p,c,m,h,e;
+	printf("enter the marks of p,c,m,h,e. \n");
+	scanf("%d %d %d %d %d",&p,&c,&m ,&h, &e);
+    int total=p+c+m+h+e;
+	float percentage=total/5.0; 
+	printf("total=%d \n",total);
+	printf("percentage=%d \n",percentage );
+	if(total<25)
+	{
+		printf("F.\n");
+		printf("percentage=%d",percentage);
+
+	 }
+	 else if(total>=25 && total<=45)
+	 {
+	 	printf("E. \n");
+	 }
+	 else if(total>45 && total<=50)
+	 {
+	 	printf("D");
+	 }
+	 else if(total>50 && total<=60)
+	 {
+	 	printf("C");
+	 }
+	 else if(total>60 && total<=80)
+	 {
+	 	printf("B");
+	 }
+	 else if (total>80)
+	 printf("A");
+	 
+	 
+	
+	return 0;
+}
+******************************************************************************************
+#include<stdio.h>
+int main()
+{
+	int rollnumber, p,c,m;
+	float totalmarks,percentage;
+	char division;
+	printf("enter the rollnumber of the students\n");
+	scanf("%d",&rollnumber);
+	printf("enter the marks of p,c,m");
+	scanf("%d %d %d",&p,&c,&m);
+	totalmarks=p+c+m;
+	printf("totalmarks=%f",totalmarks);
+	percentage=totalmarks/3.0;
+	printf("percentage=%f",percentage);
+	if(percentage>=60)
+	{
+		printf("fist division");
+	}
+	else if(percentage>=50 && percentage<60)
+	{
+		printf("second divsion");	
+    }
+	else if(percentage>=40 && percentage<50)
+	{
+		printf("third division");
+	}
+	else{
+		printf("fail");
+	}  
+	  
+	return 0;
+}
+*************************************************************************************************************
+#include<stdio.h>
+int main()
+{
+	char word;
+	printf("enter the value");
+	scanf("%c",&word);
+	if(word>='a'&& word<='z')
+	{
+		printf("word is lower case");
+	}
+	else if(word>='A' && word<='Z')
+	{
+	printf("word is upper case");
+    }
+    else{
+    	printf("digit");
+	}
+}
+*********************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
